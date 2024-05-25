@@ -3,7 +3,7 @@ import axios from 'axios';
 const URL =
   process.env.NODE_ENV === 'production'
     ? import.meta.env.VITE_BACKEND_URL
-    : 'https://salud.azurewebsites.net';
+    : 'https://pepitooo.azurewebsites.net/';
 
 console.log(`API URL: ${URL}/api/act/actividades/`);
 
