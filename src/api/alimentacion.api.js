@@ -4,15 +4,15 @@
 import axios from 'axios';
 
 
-
 const backendURL = 'https://pepitooo.azurewebsites.net/';
 
-console.log(`API URL: ${backendURL}/api/ali/alimentacion/`);
+console.log(`API URL: ${backendURL}api/ali/alimentacion/`);
 
 // Crea una instancia de Axios con la URL base configurada
-const actividadesApi = axios.create({
-  baseURL: `${backendURL}/api/ali/alimentacion/`,
+const alimentacionesApi = axios.create({
+  baseURL: `${backendURL}api/ali/alimentacion/`,
 });
+
 
 
 
