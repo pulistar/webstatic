@@ -1,14 +1,12 @@
 import axios from 'axios';
 
-const URL =
-  process.env.NODE_ENV === 'production'
-    ? import.meta.env.VITE_BACKEND_URL
-    : 'https://salud.azurewebsites.net';
+const backendURL = 'https://pepitooo.azurewebsites.net/';
 
-console.log(`API URL: ${URL}/api/rec/recordatorio/`);
+console.log(`API URL: ${backendURL}api/rec/recordatorio/`);
 
+// Crea una instancia de Axios con la URL base configurada
 const recordatoriosApi = axios.create({
-  baseURL: `${URL}/api/rec/recordatorio/`,
+  baseURL: `${backendURL}api/rec/recordatorio/`,
 });
 
 export const getAllRecordatorios = () => recordatoriosApi.get('/');
