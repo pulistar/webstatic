@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const backendURL = 'https://salud.azurewebsites.net/';
+const backendURL = 'https://pepitooo.azurewebsites.net/';
 
 
 
