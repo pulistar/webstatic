@@ -1,15 +1,16 @@
 import axios from 'axios';
 
-const URL =
-  process.env.NODE_ENV === 'production'
-    ? import.meta.env.VITE_BACKEND_URL
-    : 'https://pepitooo.azurewebsites.net/';
+const backendURL = 'https://salud.azurewebsites.net/';
 
-console.log(`API URL: ${URL}/api/act/actividades/`);
 
+
+console.log(`API URL: ${backendURL}/api/act/actividades/`);
+
+// Crea una instancia de Axios con la URL base configurada
 const actividadesApi = axios.create({
-  baseURL: `${URL}/api/act/actividades/`,
+  baseURL: `${backendURL}/api/act/actividades/`,
 });
+
 
 export const getAllActividades = () => actividadesApi.get('/');
 
