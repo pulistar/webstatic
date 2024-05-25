@@ -3,15 +3,15 @@
 
 import axios from 'axios';
 
-const URL =
-  process.env.NODE_ENV === 'production'
-    ? import.meta.env.VITE_BACKEND_URL
-    : 'https://salud.azurewebsites.net';
 
-console.log(`API URL: ${URL}/api/ali/alimentacion/`);
 
-const alimentacionesApi = axios.create({
-  baseURL: `${URL}/api/ali/alimentacion/`,
+const backendURL = 'https://pepitooo.azurewebsites.net/';
+
+console.log(`API URL: ${backendURL}/api/ali/alimentacion/`);
+
+// Crea una instancia de Axios con la URL base configurada
+const actividadesApi = axios.create({
+  baseURL: `${backendURL}/api/ali/alimentacion/`,
 });
 
 
