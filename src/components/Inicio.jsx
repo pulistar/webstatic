@@ -35,15 +35,15 @@ const Inicio = () => {
                     </p>
 
                     <div className="flex items-center space-x-5 justify-center md:justify-start md:gap-10">
-                        <a href="/actividades" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
+                        <Link to="/actividades" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                             Actividad
-                        </a>
-                        <a href="/alimentacion" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
+                        </Link>
+                        <Link to="/alimentacion" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                             Alimentación
-                        </a>
-                        <a href="/recordatorios" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
+                        </Link>
+                        <Link to="/recordatorios" className="px-3 py-2 my-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                             Recordatorios
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
