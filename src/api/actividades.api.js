@@ -3,9 +3,9 @@ import axios from 'axios';
 const URL =
   process.env.NODE_ENV === 'production'
     ? import.meta.env.VITE_BACKEND_URL
-    : 'https://pepitooo.azurewebsites.net';
+    : 'https://pepitooo.azurewebsites.net/';
 
-console.log(`API URL: ${URL}/api/act/actividades/`);
+console.log(`API URL: ${URL}api/act/actividades/`);
 
 const actividadesApi = axios.create({
   baseURL: `${URL}/api/act/actividades/`,
