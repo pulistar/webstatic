@@ -3,6 +3,7 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import hombre from '../assets/imagenes/hombre.png';
+import { Link } from 'react-router-dom';
 
 const Inicio = () => {
     return (
