@@ -4,11 +4,11 @@ const backendURL = 'https://pepitooo.azurewebsites.net/';
 
 
 
-console.log(`API URL: ${backendURL}/api/act/actividades/`);
+console.log(`API URL: ${backendURL}api/act/actividades/`);
 
 // Crea una instancia de Axios con la URL base configurada
 const actividadesApi = axios.create({
-  baseURL: `${backendURL}/api/act/actividades/`,
+  baseURL: `${backendURL}api/act/actividades/`,
 });
 
 
